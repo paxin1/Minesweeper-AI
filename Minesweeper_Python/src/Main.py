@@ -109,7 +109,9 @@ def main():
 
 					world = World(filename=f, aiType=aiType, verbose=verbose, debug=debug)
 
+					print(f)
 					score = world.run()
+					print(score)
 					if score == 1:
 						scoreBeg += 1
 					elif score == 2:
